@@ -9,7 +9,7 @@ const prisma = new PrismaClient();
 app.get("/users", async () => {
   const users = await prisma.user.findMany();
 
-  return { users };
+  return "test"//  { users };
 });
 
 app.post("/users", async (req, res) => {
